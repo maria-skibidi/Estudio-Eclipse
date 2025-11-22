@@ -1,0 +1,162 @@
+body {
+  background-color: #1E2A44;
+  color: #f5f5f5;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  text-align: center;
+}
+
+header {
+  background-color: #162238;
+  padding: 30px 0;
+}
+
+header h1 {
+  color: #ffa500;
+  margin: 0;
+}
+
+nav {
+  background-color: #111C30;
+  padding: 10px;
+}
+
+nav a {
+  color: #ffa500;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+section {
+  padding: 40px 20px;
+  border-bottom: 1px solid #243559;
+}
+
+section h2 {
+  color: #ffa500;
+}
+
+section p {
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li::before {
+  content: "✨ ";
+  color: #ffa500;
+}
+
+table {
+  margin: 20px auto;
+  border-collapse: collapse;
+  width: 70%;
+  background-color: #22345a;
+  font-size: 0.95em;
+}
+
+th, td {
+  border: 1px solid #fff;
+  padding: 8px 12px;
+}
+
+form {
+  background-color: #22345a;
+  display: inline-block;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 15px;
+}
+
+label {
+  display: block;
+  text-align: left;
+  margin-top: 10px;
+}
+
+input[type="text"], input[type="email"] {
+  width: 250px;
+  padding: 6px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+input[type="submit"] {
+  background-color: #ffa500;
+  border: none;
+  color: white;
+  padding: 8px 15px;
+  margin-top: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #ffb84d;
+}
+
+iframe {
+  margin-top: 20px;
+  border: none;
+  border-radius: 8px;
+}
+
+details {
+  background-color: #22345a;
+  display: inline-block;
+  padding: 10px 15px;
+  border-radius: 8px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+button {
+  background-color: #ffa500;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 20px 0;
+}
+
+button:hover {
+  background-color: #ffb84d;
+}
+
+footer {
+  background-color: #111C30;
+  padding: 15px;
+  font-size: 0.9em;
+  border-top: 1px solid #243559;
+}
+
+/* ===== Efecto de movimiento y desenfoque en TODAS las imágenes del sitio ===== */
+
+/* Si hay varias imágenes, se aplica el desenfoque a las no seleccionadas */
+body:has(img:hover) img:not(:hover) {
+  filter: blur(4px);
+  transition: 0.3s ease;
+}
+
+/* Animación y movimiento al pasar el cursor */
+img {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 8px;
+}
+
+/* Efecto visual: la imagen se eleva ligeramente y obtiene sombra */
+img:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
